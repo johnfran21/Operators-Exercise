@@ -7,11 +7,17 @@
             int a = 17;
             int b = 4;
             int sum = a + b;
+            int subtract = a - b;
+            int multiply = a * b;
             int quotient = a / b;
             int remainder = a % b;
 
+            Console.WriteLine($"{a} - {b} equals {subtract}");
+            Console.WriteLine($"{a} * {b} equals {multiply}");
             Console.WriteLine($"{a} + {b} equals {sum} and {a}/{b} is {quotient} remainder {remainder}.");
             Console.WriteLine("Give number for chosen Radius");
+
+
             double radius = double.Parse(Console.ReadLine());
             Console.WriteLine(AreaOfCircle(radius));
         }
